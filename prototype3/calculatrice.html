@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="CalculatriceBLO.js"></script>
+    <script src="calculatrice.js"></script>
+  </head>
+  <body>
+
+
+    
+    <input type="text" readonly class="" id="afficheur">
+    <table>
+
+        <tr>
+            <td><input  type="button" class="btn btn-primary" value="1" onclick="ClickNumber(1)"></td>
+            <td><input  type="button" class="btn btn-primary" value="2" onclick="ClickNumber(2)"></td>
+            <td><input  type="button" class="btn btn-primary" value="3" onclick="ClickNumber(3)"></td>
+            <td rowspan="2"><input type="button"  class="btn btn-primary nn" value="+" onclick="Operation('+')"></td>
+            <td><input  type="button" class="btn btn-primary" value="C" onclick="Init()"></td>
+        </tr>
+        <tr>
+            <td><input  type="button" class="btn btn-primary" value="4" onclick="ClickNumber(4)"></td>
+            <td><input  type="button" class="btn btn-primary" value="5" onclick="ClickNumber(5)"></td>
+            <td><input  type="button" class="btn btn-primary" value="6" onclick="ClickNumber(6)"></td>
+            <td><input  type="button" class="btn btn-primary" value="/ " onclick="Operation('/')"></td>
+        </tr>
+        <tr>
+            <td><input  type="button" class="btn btn-primary" value="7" onclick="ClickNumber(7)"></td>
+            <td><input  type="button" class="btn btn-primary" value="8" onclick="ClickNumber(8)"></td>
+            <td><input  type="button" class="btn btn-primary" value="9" onclick="ClickNumber(9)"></td>
+            <td><input  type="button" class="btn btn-primary" value="X" onclick="Operation('*')"></td>
+            <td rowspan="2"><input  type="button" class="btn btn-primary nn" value="=" onclick="Egale()"></td>
+        </tr>
+        <tr>
+            <td colspan = "2"><input  type="button" class="btn btn-primary pp" value="0" onclick="ClickNumber(0)"></td>
+            <td><input  type="button" class="btn btn-primary" value=" ." onclick="ClickNumber('.')"></td>
+            <td><input  type="button" class="btn btn-primary" value="_" onclick="Operation('-')"></td>
+            
+        </tr>
+    
+    </table>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
