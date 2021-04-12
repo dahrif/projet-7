@@ -1,14 +1,13 @@
 function insert(num){
-    document.form.ecran.value = document.form.ecran.value+num
+    
+    document.calcul.ecran.value = document.calcul.ecran.value+num
 }
 
 function equal(){
-    var mont = document.form.ecran.value;
-    if(mont){
-    document.form.ecran.value = eval(mont)
-    }
+    var mont = document.calcul.ecran.value;
+    document.calcul.ecran.value = eval(mont)
 }
 
 function vider(){
-    document.form.ecran.value = ""
+    document.calcul.ecran.value = ""
 }
