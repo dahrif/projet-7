@@ -20,12 +20,7 @@ class CalculatriceBLO {
     set y(value){
           this.#_y = value;
     }
-    get y() {
-        return this.#_y 
-    }
-    set y(value){
-          this.#_y = value;
-    }
+
     get operation() {
         return this.#_operation
     }
