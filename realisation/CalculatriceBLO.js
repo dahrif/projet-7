@@ -15,13 +15,13 @@ constructor(x,y,solution,operation){
                 this.solution = this.x + this.y;
                 break;
             case '-':
-                this. solution = this.x- this.y;
+                this. solution = this.x - this.y;
                     break;
             case '*':
-                this. solution = this.x* this.y;
+                this. solution = this.x * this.y;
                     break;
             case '/':
-                this. solution = this.x/ this.y;
+                this. solution = this.x / this.y;
                     break;
             default:
                 break;

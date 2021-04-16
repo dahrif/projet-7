@@ -6,9 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    
-
     <link rel="stylesheet" href="style.css">
     <script src="CalculatriceBLO.js"></script>
     <script src="calculatrice.js"></script>
@@ -20,15 +17,33 @@
 
             <input type="text" readonly class="afficheur" id="afficheur">
 
-            <span class="btn" onclick="Operation('/')">/</span>
-            <span onclick="Operation('*')">*</span>
-            <span onclick="Operation('-')">-</span>
+            <script>
+              var workorNot = document.getElementById("afficheur").value;
+              setInterval(() => {
+                while (workorNot[workorNot.length-1] == ".") {
+                console.log("WOOOOOOW")
+               var allsymbols =  document.querySelectorAll(".symboles");
+            
+               allsymbols.forEach(element=>{
+                 element.onclick = null;
+                 console.log(element)
+                
+               })
+              }
+              }, 100);
+
+
+            </script>
+
+            <span class="symboles" onclick="Operation('/')">/</span>
+            <span class="symboles" onclick="Operation('*')">*</span>
+            <span class="symboles" onclick="Operation('-')">-</span>
             <span class="supp" onclick="Init()">C</span>
 
             <span onclick="ClickNumber(1)">1</span>
             <span onclick="ClickNumber(2)">2</span>
             <span onclick="ClickNumber(3)">3</span>
-            <span class="plus" onclick="Operation('+')">+</span>
+            <span class="symboles plus" onclick="Operation('+')">+</span>
 
             <span onclick="ClickNumber(4)">4</span>
             <span onclick="ClickNumber(5)">5</span>
@@ -37,18 +52,13 @@
 
             <span onclick="ClickNumber(8)">8</span>
             <span onclick="ClickNumber(9)">9</span>
-            <span class="egale" onclick="Egale()">=</span>
+            <span class="egale" onclick="Egale()">=</span>           
             <span class="zero" onclick="ClickNumber(0)">0</span>
-            <span onclick="ClickNumber('.')">.</span>
+            <span class="symboles" id="virgule" onclick="ClickNumber('.')">.</span>
+  
     
         </div>
       </div>
-        
-    
-    
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
   </body>
 </html>

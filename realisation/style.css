@@ -65,14 +65,14 @@ body{
 
 .container .calculatrice span:hover{
     transition: 0s;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .container .calculatrice span:active{
-    background: white;
-    color: black;
+    background: #bfa3b87e;
+    color: #0B4B7A;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .container .calculatrice .plus{

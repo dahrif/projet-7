@@ -18,6 +18,8 @@ function Afficher(number){
 
     let afficheur = document.getElementById("afficheur");
     afficheur.value = "";
+
+
     
     if(calculatrice.x != undefined && calculatrice.y != undefined && calculatrice.operation != undefined){
 
