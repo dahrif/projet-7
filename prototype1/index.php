@@ -7,18 +7,19 @@
     <title>Calculatrice</title>
 </head>
 <body>
-    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
-    <input type="text" name="number1">
-    <input type="text" name="number2">
-    <input type="submit" name="addition" value="addition">
+    <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+    <input type="text" name="number1"><br>
+    <input type="text" name="number2"><br>
+    <input type="submit" name="addition" value="addition"><br>
     
     <?php 
-  
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $num1 = $_POST ["number1"];
     $num2 = $_POST ["number2"];
     
         echo $num1 + $num2;
-
+ }
     ?>
 </body>
 </html>
