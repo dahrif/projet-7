@@ -17,23 +17,7 @@
 
             <input type="text" readonly class="afficheur" id="afficheur">
 
-            <script>
-              var workorNot = document.getElementById("afficheur").value;
-              setInterval(() => {
-                while (workorNot[workorNot.length-1] == ".") {
-                console.log("WOOOOOOW")
-               var allsymbols =  document.querySelectorAll(".symboles");
-            
-               allsymbols.forEach(element=>{
-                 element.onclick = null;
-                 console.log(element)
-                
-               })
-              }
-              }, 100);
-
-
-            </script>
+ 
 
             <span class="symboles" onclick="Operation('/')">/</span>
             <span class="symboles" onclick="Operation('*')">*</span>
@@ -62,3 +46,28 @@
     
   </body>
 </html>
+
+
+
+
+
+
+
+
+<script>
+  // var workorNot = document.getElementById("afficheur").value;
+  // setInterval(() => {
+  //   while (workorNot[workorNot.length-1] == ".") {
+  //   console.log("WOOOOOOW")
+  //  var allsymbols =  document.querySelectorAll(".symboles");
+
+  //  allsymbols.forEach(element=>{
+  //    element.onclick = null;
+  //    console.log(element)
+    
+  //  })
+  // }
+  // }, 100);
+
+
+</script>
