@@ -1,5 +1,5 @@
 <?php 
-class Calculatrice {
+class Calculatrice{
     private $x;
     private $y;
     private $operation;
@@ -13,13 +13,13 @@ class Calculatrice {
     function calculer(){
         $solution = null;
         switch($this->operation){
-            case"+" : $solution = $this->x + $this->y;
-            break;
-            case"-" : $solution = $this->x - $this->y;
-            break;
+            case "+" : $solution = $this->x + $this->y;
+                break;
+            case "-" : $solution = $this->x - $this->y;
+                break;
         }
         return $solution;
-    }
+} 
 }
 
     $x = null;
@@ -28,22 +28,22 @@ class Calculatrice {
     $afficheur = "";
     $solution = null;
 
-if(isset($_POST['x'])) $x = $_POST['x'];
-if(isset($_POST['y'])) $y = $_POST['y'];
-if(isset($_POST['operation'])) $operation = $_POST['operation'];
-
+    if(isset($_POST['x'])) $x = $_POST['x'];
+    if(isset($_POST['y'])) $y = $_POST['y'];
+    if(isset($_POST['operation'])) $operation = $_POST['operation'];
 
 if(isset($_POST['number'])){
     $number = $_POST['number'];
     if($operation == null){
         if($x == null) $x = $number;
         else $x = floatval($x . $number);
-    }
-    else{
-        if($y == null) $y = $nubmer;
+    }else{
+        if($y == null) $y = $number;
         else $y = floatval($y . $number);
     }
 } 
+
+
 
 if(isset($_POST['egale'])){
     $egale = $_POST['egale'];
@@ -59,6 +59,17 @@ else{
     if($y != null) $afficheur .= $y ;
 }
 
+
+if(isset($_POST['init'])){
+    $init = $_POST['init'];
+    $x = null;
+    $y = null;
+    $operation = null;
+    $afficheur = "";
+    $solution = null;
+
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -70,16 +81,19 @@ else{
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
-    <input type="text" name="x" value="<?php echo $x ?>">
-    <input type="text" name="y" value="<?php echo $y ?>">
-    <input type="text" name="operation" value="<?php echo $operation ?>">
-    <input type="text" name="afficheur" value="<?php echo $afficheur ?>">
-    <input type="submit" namue="number" value="1">
-    <input type="submit" namue="number" value="2">
-    <input type="submit" namue="operation" value="+">
-    <input type="submit" namue="egale" value="=">
-    <input type="submit" namue="init" value="C">
+<div class="container">
+    <form class="form" action="" method="post">
+    <input class="" type="text" name="x" value="<?php echo $x ?>">
+    <input class="" type="text" name="y" value="<?php echo $y ?>">
+    <input class="" type="text" name="operation" value="<?php echo $operation ?>">
+    <input class="" type="text" name="afficheur" value="<?php echo $afficheur ?>">
+    <input class="" type="submit" name="number" value="1"></input>
+    <input class="" type="submit" name="number" value="2"></input>
+    <input class="" type="submit" name="operation" value="+"></input>
+    <input class="" type="submit" name="operation" value="-"></input>
+    <input class="" type="submit" name="egale" value="="></input>
+    <input class="" type="submit" name="init" value="C"></input>
     </form>
+</div>
 </body>
 </html>

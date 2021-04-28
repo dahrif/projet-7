@@ -34,7 +34,7 @@ class Calculatrice{
 
     // Récupération des variables de la page
     if(isset($_POST['x'])) $x = $_POST['x'];
-    if(isset($_POST['y']))$y = $_POST['y'];
+    if(isset($_POST['y'])) $y = $_POST['y'];
     if(isset($_POST['operation'])) $operation = $_POST['operation'];
 
     // Ajouter la valeur du nombre au X ou Y

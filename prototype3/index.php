@@ -90,32 +90,39 @@ if(isset($_POST['init'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" ></script>
     <title>Document</title>
 </head>
+
 <body>
+
+<div class="container">
+
 <form action="" method="post">
-    <input type="text" name="x" value="<?php echo $x ?>">
-    <input type="text" name="y" value="<?php echo $y ?>">
-    <input type="text" name="operation" value="<?php echo $operation ?>">
-    <input type="text" name="afficheur" value="<?php echo $afficheur ?>"><br>
-    <input type="submit" name="nombre" value="1">
-    <input type="submit" name="nombre" value="2">
-    <input type="submit" name="nombre" value="3">
-    <input type="submit" name="init" value="C"><br>
-    <input type="submit" name="nombre" value="4">
-    <input type="submit" name="nombre" value="5">
-    <input type="submit" name="nombre" value="6">
-    <input type="submit" name="operation" value="+"><br>
-    <input type="submit" name="nombre" value="7">
-    <input type="submit" name="nombre" value="8">
-    <input type="submit" name="nombre" value="9">
-    <input type="submit" name="operation" value="-"><br>
-    <input type="submit" name="nombre" value="0">  
-    <input type="submit" name="operation" value="*">
-    <input type="submit" name="operation" value="/">
-    <input type="submit" name="egale" value="=">
+    <input  type="hidden" name="x" value="<?php echo $x ?>" >
+    <input type="hidden" name="y" value="<?php echo $y ?>">
+    <input  type="hidden" name="operation" value="<?php echo $operation ?>">
+    <input readonly class="form-control form-control-lg " type="text" name="afficheur" value="<?php echo $afficheur ?>"><br>
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="1">
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="2">
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="3">
+    <input class="btn btn-primary mb-3" type="submit" name="init" value="C"><br>
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="4">
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="5">
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="6">
+    <input class="btn btn-primary mb-3" type="submit" name="operation" value="+"><br>
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="7">
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="8">
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="9">
+    <input class="btn btn-primary mb-3" type="submit" name="operation" value="-"><br>
+    <input class="btn btn-primary mb-3" type="submit" name="nombre" value="0">  
+    <input class="btn btn-primary mb-3" type="submit" name="operation" value="*">
+    <input class="btn btn-primary mb-3" type="submit" name="operation" value="/">
+    <input class="btn btn-primary mb-3" type="submit" name="egale" value="=">
     
 </form>
-    
+    </div>
 </body>
 </html>
