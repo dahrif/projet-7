@@ -1,30 +1,32 @@
 <?php
-class Calculatrice {
-    private $x;
-    private $y;
-    private $operation;
+require "class.php";
 
-function __construct($a,$b,$operation){
-    $this->x = $a;
-    $this->y = $b;
-    $this->operation = $operation;
-}
+// class Calculatrice {
+//     private $x;
+//     private $y;
+//     private $operation;
 
-function calculer(){
-    $solution = null ;
-    switch($this->operation){
-        case '+' : $solution = $this->x + $this->y;
-        break;
-        case '-' : $solution = $this->x - $this->y;
-        break;
-        case '*' : $solution = $this->x + $this->y;
-        break;
-        case '/' : $solution = $this->x - $this->y;
-        break;
-    }
-    return $solution;
-}
-}
+// function __construct($a,$b,$operation){
+//     $this->x = $a;
+//     $this->y = $b;
+//     $this->operation = $operation;
+// }
+
+// function calculer(){
+//     $solution = null ;
+//     switch($this->operation){
+//         case '+' : $solution = $this->x + $this->y;
+//         break;
+//         case '-' : $solution = $this->x - $this->y;
+//         break;
+//         case '*' : $solution = $this->x + $this->y;
+//         break;
+//         case '/' : $solution = $this->x - $this->y;
+//         break;
+//     }
+//     return $solution;
+// }
+// }
 
 //initialiser les variables
 $x=null;
@@ -101,6 +103,7 @@ if(isset($_POST['init'])){
 <div class="container">
 
 <form action="" method="post">
+<<<<<<< HEAD
     <input  type="hidden" name="x" value="<?php echo $x ?>" >
     <input type="hidden" name="y" value="<?php echo $y ?>">
     <input  type="hidden" name="operation" value="<?php echo $operation ?>">
@@ -121,6 +124,28 @@ if(isset($_POST['init'])){
     <input class="btn btn-primary mb-3" type="submit" name="operation" value="*">
     <input class="btn btn-primary mb-3" type="submit" name="operation" value="/">
     <input class="btn btn-primary mb-3" type="submit" name="egale" value="=">
+=======
+    <input type="hidden" name="x" value="<?php echo $x ?>">
+    <input type="hidden" name="y" value="<?php echo $y ?>">
+    <input type="hidden" name="operation" value="<?php echo $operation ?>">
+    <input type="text" name="afficheur" value="<?php echo $afficheur ?>"><br>
+    <input type="submit" name="nombre" value="1">
+    <input type="submit" name="nombre" value="2">
+    <input type="submit" name="nombre" value="3">
+    <input type="submit" name="init" value="C"><br>
+    <input type="submit" name="nombre" value="4">
+    <input type="submit" name="nombre" value="5">
+    <input type="submit" name="nombre" value="6">
+    <input type="submit" name="operation" value="+"><br>
+    <input type="submit" name="nombre" value="7">
+    <input type="submit" name="nombre" value="8">
+    <input type="submit" name="nombre" value="9">
+    <input type="submit" name="operation" value="-"><br>
+    <input type="submit" name="nombre" value="0">  
+    <input type="submit" name="operation" value="*">
+    <input type="submit" name="operation" value="/">
+    <input type="submit" name="egale" value="=">
+>>>>>>> 3ea27c0b30c9f0893b66e3917d11c3c32a2a625f
     
 </form>
     </div>

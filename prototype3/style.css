@@ -1,4 +1,5 @@
 *{
+<<<<<<< HEAD
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,4 +16,9 @@ body{
 
 .form-control {
     width: 200px;
+=======
+    margin: auto;
+    padding: auto;
+    
+>>>>>>> 3ea27c0b30c9f0893b66e3917d11c3c32a2a625f
 }
